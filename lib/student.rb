@@ -31,7 +31,7 @@ class Student
     if self.id
       self.update
     else
-      sql = "INSERT INTO songs (name, album) VALUES (?, ?)"
+      sql = "INSERT INTO students (name, grade) VALUES (?, ?)"
   
       DB[:conn].execute(sql, self.name, self.grade)
 
